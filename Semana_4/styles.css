@@ -1,0 +1,62 @@
+/* Estilo personalizado para TechnoMarket */
+
+/* Botón primario personalizado */
+.btn-primary {
+  background-color: #ff5733;
+  border: none;
+  transition: all 0.3s ease; /* Mejor usar 'all' para incluir background si lo cambias */
+}
+
+.btn-primary:hover {
+  background-color: #e04e2b;
+  transform: scale(1.05);
+}
+
+/* Botón light personalizado */
+.btn-light {
+  background-color: #f0f0f0;
+  border: none;
+  transition: all 0.3s ease;
+  color: #212529; /* Para que el texto sea legible */
+}
+
+.btn-light:hover {
+  background-color: #6933ff;
+  color: white;
+}
+
+/* Efecto hover en tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Media query para móviles */
+@media (max-width: 576px) {
+  body {
+    background-color: #f8f9fa;
+  }
+
+  h1 {
+    font-size: 1.8rem !important; /* Asegura que se aplique */
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  footer a {
+  color: #0d6efd; /* Azul primario de Bootstrap */
+  text-decoration: underline;
+  }
+
+  footer a:hover {
+  color: #0a58ca; /* Azul más oscuro en hover */
+  }
+  
+}

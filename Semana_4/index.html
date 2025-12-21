@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio con Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/online.gif">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TechnoMarket</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center my-4">
+    <h1>Bienvenidos a TechnoMarket</h1>
+  </header>
+
+  <!-- Sección de productos -->
+  <section class="container my-5" id="productos">
+    <h2 class="text-center mb-4">Nuestros productos</h2>
+    <div class="row text-center">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="HP Pavilion 15 Laptop">
+          <div class="card-body">
+            <h3 class="card-title">HP Pavilion 15 Laptop</h3>
+            <p class="card-text">Portátil con pantalla de 15.6", procesador Intel Core i5 de 12ª generación, 8GB RAM y 512GB SSD. Ideal para estudiantes y profesionales que buscan rendimiento y diseño elegante.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/imagen2.webp" class="card-img-top img-fluid" alt="Samsung Galaxy S23">
+          <div class="card-body">
+            <h3 class="card-title">Samsung Galaxy S23</h3>
+            <p class="card-text">Smartphone de gama alta con pantalla AMOLED de 6.1", cámara triple de 50MP, batería de larga duración y conectividad 5G. Perfecto para fotografía y productividad móvil.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow rounded">
+          <img src="assets/img/imagen3.webp" class="card-img-top img-fluid" alt="Apple iPad 10ª Generación (2024)">
+          <div class="card-body">
+            <h3 class="card-title">Apple iPad 10ª Generación (2024)</h3>
+            <p class="card-text">Tablet con pantalla de 10.9", chip A14 Bionic, 64GB de almacenamiento y compatibilidad con Apple Pencil. Excelente para entretenimiento, estudio y trabajo creativo.</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collapse -->
+  <div class="container mb-5">
+    <p><a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#infoExtra">Más información</a></p>
+    <div class="collapse" id="infoExtra">
+      <div class="card card-body">
+        Todos nuestros productos incluyen garantía oficial de fábrica y respaldo técnico especializado.
+      </div>
+    </div>
+  </div>
+
+    <!-- Formulario -->
+  <section class="text-center bg-warning-subtle text-dark py-5" id="contacto">
+    <h2 class="mb-4">Contáctanos</h2>
+    <form class="container" onsubmit="alert('Mensaje enviado'); return false;">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="mb-3 text-start">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+          </div>
+          <div class="mb-3 text-start">
+            <label for="comentarios" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios aquí"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="text-center bg-light text-dark py-3 mt-5">
+    <p>© 2025 TechnoMarket. Todos los derechos reservados.</p>
+    <a href="#" class="text-primary mx-2">Términos</a> | <a href="#" class="text-primary mx-2">Privacidad</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
