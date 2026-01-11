@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería interactiva de productos TechnoMarket - Hardware y gadgets de alto nivel" />
+  <title>TechnoMarket - Galería de Productos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="logo">💻TechnoMarket</div>
+    <nav class="navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#galerias">Galerías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="centro">
+    <section class="hero">
+      <h1>Galería de Imagenes de Productos</h1>
+      <p class="subtitulo">Inserta el enlace de la imagen para la generación dinámica de la vista previa y el ordenamiento de la imagen.</p>
+    </section>
+
+    <section class="formulario">
+      <input 
+        type="url" 
+        id="imagenURL" 
+        placeholder="Pega aquí la URL de la imagen..." 
+        aria-label="URL de la imagen"
+      />
+      <div class="botones">
+        <button id="agregarBtn" aria-label="Agregar imagen a la galería">➕ Agregar</button>
+        <button id="eliminarBtn" class="eliminar" aria-label="Eliminar imagen seleccionada">🗑️ Eliminar</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria" role="region" aria-label="Galería de imágenes de productos"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>TechnoMarket</h3>
+        <p>Tu tienda exclusiva de hardware y gadgets de alto nivel.</p>
+      </div>
+      <div>
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#privacidad">Política de privacidad</a></li>
+          <li><a href="#soporte">Soporte técnico</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Email: soporte@technomarket.com</p>
+        <p>WhatsApp: +593 0997007220</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 TechnoMarket. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
