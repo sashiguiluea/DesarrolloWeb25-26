@@ -1,0 +1,175 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+/* Reset de márgenes y paddings */
+body {
+  margin: 0;
+  background: #f4f6fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Título y subtítulo del encabezado */
+header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+/* Estilo del párrafo en el encabezado */
+header p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+/* ===== CONTENIDO PRINCIPAL ===== */
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin: 40px auto;
+}
+/* Título del contenedor */
+.container h1 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #1b2a4a;
+}
+/* Estilo de los campos del formulario */
+.field {
+  margin-bottom: 14px;
+}
+/* Estilo de las etiquetas de los campos */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1b2a4a;
+}
+/* Estilo de los inputs */
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 2px solid #d7dbe7;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 15px;
+}
+/* Estilo del input al recibir foco */
+input:focus {
+  box-shadow: 0 0 0 4px rgba(70, 122, 255, 0.15);
+  border-color: #467aff;
+}
+
+/* Estados dinámicos */
+input.valid {
+  border-color: #1db954;
+  box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.12);
+}
+/* Estilo del input en estado inválido */
+input.invalid {
+  border-color: #e53935;
+  box-shadow: 0 0 0 4px rgba(229, 57, 53, 0.12);
+}
+/* Estilo de los mensajes de error */
+small.error {
+  display: block;
+  min-height: 18px;
+  margin-top: 6px;
+  color: #e53935;
+  font-weight: 600;
+  font-size: 13px;
+}
+/* Contenedor de los botones */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+/* Estilo de los botones */
+button {
+  flex: 1;
+  padding: 11px 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.05s, opacity 0.2s;
+  font-size: 15px;
+}
+/* Efecto al presionar el botón */
+button:active {
+  transform: scale(0.99);
+}
+/* Estilo del botón deshabilitado */
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+/* Estilo del botón primario */
+#btnEnviar {
+  background: #27ae60;/*#467aff;*/
+  color: #fff;
+}
+/* Efecto hover del botón primario */
+#btnEnviar:hover:not(:disabled) {
+  background: #27ae60;
+}
+/* Estilo del botón secundario */
+button.secondary {
+  background: #e9edf7;
+  color: #1b2a4a;
+}
+/* Efecto hover del botón secundario */
+button.secondary:hover {
+  background: #d7dbe7;
+}
+/* Indicador de campos obligatorios */
+.hint {
+  margin: 12px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+/* Mensaje de éxito */
+.success-message {
+  margin-top: 14px;
+  font-weight: 700;
+  color: #1db954;
+  min-height: 20px;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #467aff;
+}

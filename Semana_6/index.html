@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario con Validación Dinámica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado del sitio -->
+  <header>
+    <h1>TechnoMarket</h1>
+    <p>Tu tienda exclusiva de hardware y gadgets de alto nivel.</p>
+  </header>
+
+  <main class="container">
+    <h1>Registro de Usuario</h1>
+
+    <form id="registroForm" novalidate>
+      <!-- Nombre -->
+      <div class="field">
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Andrés" autocomplete="name" />
+        <small class="error" id="nombreError"></small>
+      </div>
+
+      <!-- Correo -->
+      <div class="field">
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" placeholder="Ej: correo@dominio.com" autocomplete="email" />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="field">
+        <label for="password">Contraseña *</label>
+        <input type="password" id="password" name="password" placeholder="Mín. 8, número y símbolo" autocomplete="new-password" />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <!-- Confirmación -->
+      <div class="field">
+        <label for="confirmPassword">Confirmar contraseña *</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite tu contraseña" autocomplete="new-password" />
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <!-- Edad -->
+      <div class="field">
+        <label for="edad">Edad *</label>
+        <input type="number" id="edad" name="edad" placeholder="Ej: 18" min="0" />
+        <small class="error" id="edadError"></small>
+      </div>
+      
+      <!-- Botones -->
+      <div class="actions">
+        <button type="submit" id="btnEnviar" disabled>Enviar</button>
+        <button type="reset" id="btnReset" class="secondary">Reiniciar</button>
+      </div>
+      
+      <!-- Indicador de campos obligatorios -->
+      <p class="hint">* Campos obligatorios</p>
+    </form>
+      <!-- Mensaje de éxito -->
+    <div id="mensajeExito" class="success-message" aria-live="polite"></div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 TechnoMarket. Todos los derechos reservados.</p>
+    <p>
+      Contacto:
+      <a href="mailto:soporte@technomarket.com">soporte@technomarket.com</a>
+    </p>
+  </footer>
+
+  <!-- Archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
